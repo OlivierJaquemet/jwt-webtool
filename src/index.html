@@ -227,7 +227,7 @@
           <li>On initial page load, the browser will  retrieve your previously used keys and JWT from LocalStorage. If none are found, the page will generate new contrived keys, and then generate a contrived JWT. You can replace keys or JWT payload or header with your own values. The page tries to retain those for you (on your own machine - LocalStorage!) when you reload the page.</li>
           <li>You can generate a new asymmetric keypair, or a new symmetric key, by clicking the "key regen" button.</li>
           <li>When specifying the symmetric key, you need at least 32 bytes of key material for HS256, 48 for HS384, and 64 for HS512, whether signing or verifying. The <a href='https://en.wikipedia.org/wiki/PBKDF2'>PBKDF2</a> will generate keys of the appropriate size. If you choose a different coding system, you need to ensure minimum key size yourself. When generating or verifying an encrypted JWT using the "dir" algorithm, you need to specify a key of exactly the required length, depending on the content encryption (enc) value you choose. The UI provides hints to help you with this.</li>
-          <li>Ths page shows the header and payload "pretty-printed". The actual header and payload in a JWT do not have newlines or indents.</li>
+          <li>This page shows the header and payload "pretty-printed". The actual header and payload in a JWT do not have newlines or indents.</li>
           <li>There's a shortcut: if you open the url with <tt>&lt;baseurl&gt;?JWT_HERE</tt>, it will decode *that* JWT. It
             might save you the step of pasting in your encoded JWT, if you open this page from a program. If you're paranoid you can also use
             the # as a separator. </li>
